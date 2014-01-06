@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<title>Middlecoin</title>
+	<meta charset="iso-8859-1">
+	<meta name="description" content="Profit-switching, auto-exchanging scrypt pool that pays out in BTC." />
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li class="active"><a href="index.html">Middlecoin</a></li>
+		<li><a href="faq.html">FAQ</a></li>
+		<li><a href="https://bitcointalk.org/index.php?topic=259649.new#new">News</a></li>
+		<li><a href="https://bitcointalk.org/index.php?action=profile;u=109824">Contact</a></li>
+	</ul>
+</nav>
+
+<div id="container">
+
+<article>
+	<div id="intro">
+		<h1>Middlecoin</h1>
+		<p>This pool automatically mines the most profitable scrypt coin, automatically exchanges those coins for bitcoins, and pays out entirely in bitcoins.</p>
+		<p>There is no registration. Simply connect your scrypt miner to middlecoin.com:3333 with your bitcoin address as your username, and any password. Payouts are automatic, and occur once a day, if your balance is greater than 0.01 BTC or if you haven't been paid out in 7 days and your balance is greater than 0.001 BTC.</p>
+	</div>
+
+	<h2>Fee</h2>
+	<p>My fee is 3%. The exchanges' fees vary, but are generally around 0.4% including the withdraw fees. So the total fees are usually 3.388%.</p>
+
+	<h2>Usage</h2>
+	<pre>cgminer --scrypt -o stratum+tcp://middlecoin.com:3333 -u <b><i>&lt;your bitcoin address&gt;</i></b> -p x</pre>
+
+	<h2>Stats</h2>
+	<canvas id="mc_data" width="1000" height="400">
+          ho ho, you can't display HTML canvas graphics yet
+	</canvas>
+	<script src="graphTotal.js"></script>
+	<p class="courtesy">Graph courtesy of coinGeek</p>
+
+	<table>
+	<thead>
+	<tr>
+	<th>Username</th>
+	<th>Accepted MH/s<br>(Last Hour)</th>
+	<th>Rejected MH/s<br>(Last Hour)</th>
+	<th>Immature Unexchanged Balance<br>(estimated BTC)</th>
+	<th>Unexchanged Balance<br>(estimated BTC)</th>
+	<th>Balance (BTC)</th>
+	<th>Paid Out (BTC)</th>
+	</tr>
+	</thead>
+	<tbody><tr class="total">
+	<td>Total</td>
+	<td>10578.8549</td>
+	<td>359.8806</td>
+	<td>12.69764653</td>
+	<td>63.46769140</td>
+	<td>92.19105909</td>
+	<td>4914.30488598</td>
+	</tr>
+	</tbody><tbody>
+
+	<tr>
+	<td id="1M3jtksp1upR33SX1VzeCfH5x9fc6zKykR">1M3jtksp1upR33SX1VzeCfH5x9fc6zKykR</td>
+	<td>405.7290</td>
+	<td>14.8292</td>
+	<td>0.27527608</td>
+	<td>1.15173432</td>
+	<td>2.47837605</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">3.21876143</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1JDHL5WhHNrg4HrNksnF7S1ChGVYYUkjVC">1JDHL5WhHNrg4HrNksnF7S1ChGVYYUkjVC</td>
+	<td>151.3864</td>
+	<td>6.1796</td>
+	<td>0.10400672</td>
+	<td>0.41356582</td>
+	<td>0.67512277</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.10616929</a></td>
+	</tr>
+
+	<tr>
+	<td id="1LAx3J69whHRa9DLMmMMUu2Wsej1EbvvPa">1LAx3J69whHRa9DLMmMMUu2Wsej1EbvvPa</td>
+	<td>136.8462</td>
+	<td>3.5791</td>
+	<td>0.09278061</td>
+	<td>0.16956459</td>
+	<td>0.26182581</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html"></a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1QABREeywTMZEGCwRocBdPn37WddpxDAhC">1QABREeywTMZEGCwRocBdPn37WddpxDAhC</td>
+	<td>96.5902</td>
+	<td>3.7935</td>
+	<td>0.14654057</td>
+	<td>0.70480771</td>
+	<td>0.62716887</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">21.04939687</a></td>
+	</tr>
+
+	<tr>
+	<td id="1CEBenDeCgM4YA8fqVMHrPNyK3CQUVyH6p">1CEBenDeCgM4YA8fqVMHrPNyK3CQUVyH6p</td>
+	<td>69.1594</td>
+	<td>2.3022</td>
+	<td>0.07145854</td>
+	<td>0.42399502</td>
+	<td>0.42543391</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">71.40372476</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1Jx6Pztd7PsSAxnx3NpqSjUXcQnbo37rDW">1Jx6Pztd7PsSAxnx3NpqSjUXcQnbo37rDW</td>
+	<td>67.8172</td>
+	<td>3.0945</td>
+	<td>0.10595410</td>
+	<td>0.51250872</td>
+	<td>0.47257187</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">14.08620604</a></td>
+	</tr>
+
+	<tr>
+	<td id="1GJrHT9BURf8wd4zofPDpohmcYbeu2dBdn">1GJrHT9BURf8wd4zofPDpohmcYbeu2dBdn</td>
+	<td>52.0746</td>
+	<td>0.8109</td>
+	<td>0.07800648</td>
+	<td>0.37425513</td>
+	<td>0.33496950</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">8.75563673</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1DziP6pJTLNyV8xYTNXoD5VcQgU8vSXtks">1DziP6pJTLNyV8xYTNXoD5VcQgU8vSXtks</td>
+	<td>44.2639</td>
+	<td>0.6152</td>
+	<td>0.03454353</td>
+	<td>0.23835352</td>
+	<td>0.28646454</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">23.09437711</a></td>
+	</tr>
+
+	<tr>
+	<td id="1QG7MrA2src3dWYUfAdBeGftrx5ZV8a35h">1QG7MrA2src3dWYUfAdBeGftrx5ZV8a35h</td>
+	<td>43.6953</td>
+	<td>2.0785</td>
+	<td>0.03835856</td>
+	<td>0.18770209</td>
+	<td>0.31470863</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">8.70041060</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1GadD7nhBr4b2jAfmZCbzvGMnexLdZCb6e">1GadD7nhBr4b2jAfmZCbzvGMnexLdZCb6e</td>
+	<td>38.7181</td>
+	<td>1.3329</td>
+	<td>0.07283955</td>
+	<td>0.44690242</td>
+	<td>0.34641395</td>
+	<td><a href="1GadD7nhBr4b2jAfmZCbzvGMnexLdZCb6e.html">28.77354118</a></td>
+	</tr>
+
+	<tr>
+	<td id="19CZdatDsSjaqB48osd3dj6yDXXWf7g3xk">19CZdatDsSjaqB48osd3dj6yDXXWf7g3xk</td>
+	<td>35.3906</td>
+	<td>0.7177</td>
+	<td>0.02525732</td>
+	<td>0.05951229</td>
+	<td>0.12781261</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html"></a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1EfPsusa7Upj5sgVyhuYgy8b8poYtgGho">1EfPsusa7Upj5sgVyhuYgy8b8poYtgGho</td>
+	<td>34.1137</td>
+	<td>1.8828</td>
+	<td>0.02651729</td>
+	<td>0.16404964</td>
+	<td>0.22760056</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.33150828</a></td>
+	</tr>
+
+	<tr>
+	<td id="1DDKZziE8TwgAw8zRJb2dMLoarApSK1wS6">1DDKZziE8TwgAw8zRJb2dMLoarApSK1wS6</td>
+	<td>33.4053</td>
+	<td>1.6032</td>
+	<td>0.01837641</td>
+	<td>0.02370971</td>
+	<td>0.04080412</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.73900652</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1ADEh6r9Jhp8rVfAdpMDg7GvfcC628skLy">1ADEh6r9Jhp8rVfAdpMDg7GvfcC628skLy</td>
+	<td>31.7835</td>
+	<td>0.6991</td>
+	<td>0.02343020</td>
+	<td>0.11272857</td>
+	<td>0.26593570</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">8.02098275</a></td>
+	</tr>
+
+	<tr>
+	<td id="1CXHtiFs4oEJqCm6Fr3gG6FhAoftaoVex2">1CXHtiFs4oEJqCm6Fr3gG6FhAoftaoVex2</td>
+	<td>30.0405</td>
+	<td>0.4288</td>
+	<td>0.02360126</td>
+	<td>0.05941874</td>
+	<td>0.13409450</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html"></a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="19Ps2RfXj6yb3YVQjWhr588qgceDNBwjV4">19Ps2RfXj6yb3YVQjWhr588qgceDNBwjV4</td>
+	<td>29.0432</td>
+	<td>1.7430</td>
+	<td>0.04278423</td>
+	<td>0.19872114</td>
+	<td>0.20209320</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">5.93410750</a></td>
+	</tr>
+
+	<tr>
+	<td id="1F42UkqxjWio8zDfNQDQMUHaNfA9ypv65i">1F42UkqxjWio8zDfNQDQMUHaNfA9ypv65i</td>
+	<td>28.5679</td>
+	<td>0.6991</td>
+	<td>0.04366317</td>
+	<td>0.20815254</td>
+	<td>0.19748266</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">25.76656980</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1DunDaanuGoQoenCudk5oXcXZjqCKmiLgB">1DunDaanuGoQoenCudk5oXcXZjqCKmiLgB</td>
+	<td>28.5119</td>
+	<td>1.2583</td>
+	<td>0.04206103</td>
+	<td>0.19514857</td>
+	<td>0.19315498</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.68977402</a></td>
+	</tr>
+
+	<tr>
+	<td id="1FmU9z7qkKPLvZ8za3y8m4Wx6d8D6jxwPy">1FmU9z7qkKPLvZ8za3y8m4Wx6d8D6jxwPy</td>
+	<td>26.8901</td>
+	<td>1.2863</td>
+	<td>0.04463505</td>
+	<td>0.22396104</td>
+	<td>0.20296173</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">8.29547547</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="14Ufn64C9iuBbbr2gJPY2Z7UZVyRfU6imh">14Ufn64C9iuBbbr2gJPY2Z7UZVyRfU6imh</td>
+	<td>26.7317</td>
+	<td>1.1651</td>
+	<td>0.02177589</td>
+	<td>0.13296690</td>
+	<td>0.20943560</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">5.13978896</a></td>
+	</tr>
+
+	<tr>
+	<td id="1KmpKRbpj7wJjigJC9DRbNaG4B5Fkc4ZnW">1KmpKRbpj7wJjigJC9DRbNaG4B5Fkc4ZnW</td>
+	<td>26.6944</td>
+	<td>0.5592</td>
+	<td>0.03307125</td>
+	<td>0.16084656</td>
+	<td>0.14422887</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.85492865</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1CY2Kb9RYJvbWa6t7xXE4s6jj1yCecqmbi">1CY2Kb9RYJvbWa6t7xXE4s6jj1yCecqmbi</td>
+	<td>26.4987</td>
+	<td>0.8295</td>
+	<td>0.03908843</td>
+	<td>0.20864760</td>
+	<td>0.18697795</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">6.21185542</a></td>
+	</tr>
+
+	<tr>
+	<td id="19hpCVTA4tdbJStkTixgVMVebQreQmkqFz">19hpCVTA4tdbJStkTixgVMVebQreQmkqFz</td>
+	<td>26.3402</td>
+	<td>1.2956</td>
+	<td>0.04206424</td>
+	<td>0.19620249</td>
+	<td>0.18891615</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.33303644</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1t4HzDRxrLdrUMCx8fm9K6RQ3QpE1AXVF">1t4HzDRxrLdrUMCx8fm9K6RQ3QpE1AXVF</td>
+	<td>25.7530</td>
+	<td>0.4754</td>
+	<td>0.03367906</td>
+	<td>0.17102713</td>
+	<td>0.14774010</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.38041418</a></td>
+	</tr>
+
+	<tr>
+	<td id="1975GD9po6QE631ZkgFbvt9ZpCK7femPXy">1975GD9po6QE631ZkgFbvt9ZpCK7femPXy</td>
+	<td>25.6598</td>
+	<td>0.6058</td>
+	<td>0.02008162</td>
+	<td>0.10684717</td>
+	<td>0.16183539</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.04284268</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="127i1A7UsT3gXbbkTv5JLjEfTEVXoeSBBp">127i1A7UsT3gXbbkTv5JLjEfTEVXoeSBBp</td>
+	<td>25.5946</td>
+	<td>1.3142</td>
+	<td>0.03877682</td>
+	<td>0.18133099</td>
+	<td>0.17608611</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.23662172</a></td>
+	</tr>
+
+	<tr>
+	<td id="19uT27PxuNNzrfDoBk6CtUVxttRcQAsnVs">19uT27PxuNNzrfDoBk6CtUVxttRcQAsnVs</td>
+	<td>25.0913</td>
+	<td>0.7550</td>
+	<td>0.04231972</td>
+	<td>0.22081381</td>
+	<td>0.17253694</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">15.67538679</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1PDE3uswhQKV1qZ6wdr4xkKzy12NLxcUhp">1PDE3uswhQKV1qZ6wdr4xkKzy12NLxcUhp</td>
+	<td>23.8423</td>
+	<td>0.8295</td>
+	<td>0.01765054</td>
+	<td>0.10600004</td>
+	<td>0.13355801</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.62746387</a></td>
+	</tr>
+
+	<tr>
+	<td id="18Y3Dhw1EdFTfzpVe4bKKhPgsQYuFWERLT">18Y3Dhw1EdFTfzpVe4bKKhPgsQYuFWERLT</td>
+	<td>22.2205</td>
+	<td>0.5686</td>
+	<td>0.02536603</td>
+	<td>0.13086533</td>
+	<td>0.17371584</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">28.25458001</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1HdzWR5PZ7RGAU1QMAvXJ1Tc6aPHABA3QD">1HdzWR5PZ7RGAU1QMAvXJ1Tc6aPHABA3QD</td>
+	<td>21.8290</td>
+	<td>0.3915</td>
+	<td>0.01959300</td>
+	<td>0.13413890</td>
+	<td>0.13338225</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.23589199</a></td>
+	</tr>
+
+	<tr>
+	<td id="12qYmwFbQfGPiiU1rYB1f9LC2CKpxyqLfB">12qYmwFbQfGPiiU1rYB1f9LC2CKpxyqLfB</td>
+	<td>21.4376</td>
+	<td>0.8855</td>
+	<td>0.03257886</td>
+	<td>0.14744709</td>
+	<td>0.14334037</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">5.59566686</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1BugETsWKW3jkDKRzBsQBLURjakgy4PrCD">1BugETsWKW3jkDKRzBsQBLURjakgy4PrCD</td>
+	<td>21.4003</td>
+	<td>1.3142</td>
+	<td>0.03299426</td>
+	<td>0.16246595</td>
+	<td>0.15024707</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">23.96482396</a></td>
+	</tr>
+
+	<tr>
+	<td id="155PA1CwxSENMzAQQEDmRZxDJY9DGfiaea">155PA1CwxSENMzAQQEDmRZxDJY9DGfiaea</td>
+	<td>21.0927</td>
+	<td>0.4194</td>
+	<td>0.03048669</td>
+	<td>0.13910551</td>
+	<td>0.15169327</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">4.13820957</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1AV24hjDkkSSFdcioPEB9ooUPMLi64GMi">1AV24hjDkkSSFdcioPEB9ooUPMLi64GMi</td>
+	<td>20.8224</td>
+	<td>0.4288</td>
+	<td>0.03235607</td>
+	<td>0.17356767</td>
+	<td>0.14651096</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">64.13859230</a></td>
+	</tr>
+
+	<tr>
+	<td id="17M8oBjCkpmcSLJDePCjGhzTQpzFVYPpty">17M8oBjCkpmcSLJDePCjGhzTQpzFVYPpty</td>
+	<td>20.6080</td>
+	<td>0.5592</td>
+	<td>0.01611648</td>
+	<td>0.07860104</td>
+	<td>0.09983352</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">5.95789277</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="15LfTh3T54NnkUg6ijg6Mzsd5k27NXJ3jy">15LfTh3T54NnkUg6ijg6Mzsd5k27NXJ3jy</td>
+	<td>20.5521</td>
+	<td>0.2703</td>
+	<td>0.02690120</td>
+	<td>0.13903023</td>
+	<td>0.14460681</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">26.31519812</a></td>
+	</tr>
+
+	<tr>
+	<td id="1KKTx23MMUANyCzasf2DimxicDBoPPWLG2">1KKTx23MMUANyCzasf2DimxicDBoPPWLG2</td>
+	<td>20.1699</td>
+	<td>0.6711</td>
+	<td>0.03191723</td>
+	<td>0.13649431</td>
+	<td>0.12867819</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">11.69787422</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1ABT7945BV6ZQtndUEo49TG5rZYknMB9MS">1ABT7945BV6ZQtndUEo49TG5rZYknMB9MS</td>
+	<td>20.1420</td>
+	<td>0.2703</td>
+	<td>0.02829148</td>
+	<td>0.15565855</td>
+	<td>0.14702608</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">9.16074292</a></td>
+	</tr>
+
+	<tr>
+	<td id="1Ffub2NwWrofHTJPVbSaXh2o5JqDB2xX6V">1Ffub2NwWrofHTJPVbSaXh2o5JqDB2xX6V</td>
+	<td>19.7878</td>
+	<td>1.1744</td>
+	<td>0.03162471</td>
+	<td>0.16458950</td>
+	<td>0.13808316</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">47.11228693</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="18c8eAdnbQGoQyfNa5d7TjqaDhJK3KvkHY">18c8eAdnbQGoQyfNa5d7TjqaDhJK3KvkHY</td>
+	<td>19.6573</td>
+	<td>0.4008</td>
+	<td>0.02535350</td>
+	<td>0.12812099</td>
+	<td>0.13600423</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">5.74921349</a></td>
+	</tr>
+
+	<tr>
+	<td id="1Md9ibH7Q9kWC9h8YBnScfxRCST7w7M2Qp">1Md9ibH7Q9kWC9h8YBnScfxRCST7w7M2Qp</td>
+	<td>19.4895</td>
+	<td>0.8668</td>
+	<td>0.02769494</td>
+	<td>0.15115105</td>
+	<td>0.13766242</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">4.91145608</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1suji4XFc68v87uJJwsFUSewyJTvE8FrQ">1suji4XFc68v87uJJwsFUSewyJTvE8FrQ</td>
+	<td>19.4336</td>
+	<td>0.3355</td>
+	<td>0.01294434</td>
+	<td>0.06228792</td>
+	<td>0.10351818</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.72388007</a></td>
+	</tr>
+
+	<tr>
+	<td id="1K2BPe6rYR9vTGe3bSpoxr2seNCeqvDc3o">1K2BPe6rYR9vTGe3bSpoxr2seNCeqvDc3o</td>
+	<td>19.4056</td>
+	<td>0.3728</td>
+	<td>0.02695370</td>
+	<td>0.13621300</td>
+	<td>0.11219809</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.76329638</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="15cZrX3C7Uk2sHxJDPWr7yZBuTaAe5dHi5">15cZrX3C7Uk2sHxJDPWr7yZBuTaAe5dHi5</td>
+	<td>19.1167</td>
+	<td>0.7270</td>
+	<td>0.02816212</td>
+	<td>0.14146565</td>
+	<td>0.12852115</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">22.90324848</a></td>
+	</tr>
+
+	<tr>
+	<td id="18454W5unMm1HAsyeamBZbB6nERE9rC1yo">18454W5unMm1HAsyeamBZbB6nERE9rC1yo</td>
+	<td>18.4456</td>
+	<td>0.3542</td>
+	<td>0.01501059</td>
+	<td>0.08432710</td>
+	<td>0.10323646</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.08595078</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1EDRXz5MTSRtjNpykRqh8pJCSzHx7oe4Cr">1EDRXz5MTSRtjNpykRqh8pJCSzHx7oe4Cr</td>
+	<td>17.7932</td>
+	<td>0.9321</td>
+	<td>0.01315673</td>
+	<td>0.05474901</td>
+	<td>0.09758171</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.03511588</a></td>
+	</tr>
+
+	<tr>
+	<td id="1AXgnFvvAuC17oWXAYdugJLPDv2ypXt2Ei">1AXgnFvvAuC17oWXAYdugJLPDv2ypXt2Ei</td>
+	<td>17.2526</td>
+	<td>0.6338</td>
+	<td>0.00994723</td>
+	<td>0.00703063</td>
+	<td>0.01017652</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html"></a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1JMMRcRpCR5Tv98959MHfAqgTozY7h1K6m">1JMMRcRpCR5Tv98959MHfAqgTozY7h1K6m</td>
+	<td>16.7399</td>
+	<td>0.3355</td>
+	<td>0.02557075</td>
+	<td>0.12444652</td>
+	<td>0.11408936</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.90606164</a></td>
+	</tr>
+
+	<tr>
+	<td id="1GvG6AJVvM4WebrkSYhyBpJDoNxopAozTK">1GvG6AJVvM4WebrkSYhyBpJDoNxopAozTK</td>
+	<td>16.2739</td>
+	<td>0.2983</td>
+	<td>0.02592732</td>
+	<td>0.13353773</td>
+	<td>0.11260443</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.81191304</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1U3DNW6d8pLAkDdUWTi4GiYB4jefALSwW">1U3DNW6d8pLAkDdUWTi4GiYB4jefALSwW</td>
+	<td>16.2180</td>
+	<td>0.4101</td>
+	<td>0.02154692</td>
+	<td>0.10685100</td>
+	<td>0.12139070</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.20774463</a></td>
+	</tr>
+
+	<tr>
+	<td id="1ACruk5rrJmGTkP7UyyoqGDLNZTHzkqviY">1ACruk5rrJmGTkP7UyyoqGDLNZTHzkqviY</td>
+	<td>15.7147</td>
+	<td>0.3076</td>
+	<td>0.02524966</td>
+	<td>0.12487553</td>
+	<td>0.11436473</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">7.16189520</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="149P4q9PZH8aL8RTz87AAZpysxkshj1bYY">149P4q9PZH8aL8RTz87AAZpysxkshj1bYY</td>
+	<td>15.5376</td>
+	<td>0.2796</td>
+	<td>0.01228848</td>
+	<td>0.07152539</td>
+	<td>0.09898949</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">4.33954769</a></td>
+	</tr>
+
+	<tr>
+	<td id="15E9J5cCcvrstKFdtaiA6pb39idtAt4ro9">15E9J5cCcvrstKFdtaiA6pb39idtAt4ro9</td>
+	<td>15.5376</td>
+	<td>0.7643</td>
+	<td>0.01972029</td>
+	<td>0.09623588</td>
+	<td>0.09577595</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.37048093</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1HsxsYxu3jSFomkRiijxRFvcdZoJ45Bvcs">1HsxsYxu3jSFomkRiijxRFvcdZoJ45Bvcs</td>
+	<td>15.3884</td>
+	<td>0.2237</td>
+	<td>0.02317848</td>
+	<td>0.11548287</td>
+	<td>0.10512792</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">3.71111375</a></td>
+	</tr>
+
+	<tr>
+	<td id="1FeJaEhEW8svXXLg7byERdZWXHNmRkikNe">1FeJaEhEW8svXXLg7byERdZWXHNmRkikNe</td>
+	<td>15.2207</td>
+	<td>0.5220</td>
+	<td>0.01996606</td>
+	<td>0.10429040</td>
+	<td>0.09231804</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">6.33122918</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1111123NxP646QACYVsDj22Q1aeaNHQtc">1111123NxP646QACYVsDj22Q1aeaNHQtc</td>
+	<td>14.9131</td>
+	<td>0.6804</td>
+	<td>0.02453936</td>
+	<td>0.10738198</td>
+	<td>0.09217303</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.60793090</a></td>
+	</tr>
+
+	<tr>
+	<td id="1C7hTNTy1Qz68iE7JzxAhLMHYzE1eXACza">1C7hTNTy1Qz68iE7JzxAhLMHYzE1eXACza</td>
+	<td>14.6148</td>
+	<td>0.8295</td>
+	<td>0.02242892</td>
+	<td>0.10460319</td>
+	<td>0.09993839</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">5.46143272</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1FSjQBPrnBWY9EJqtr8LeQM3uS2dpdNGjY">1FSjQBPrnBWY9EJqtr8LeQM3uS2dpdNGjY</td>
+	<td>14.4284</td>
+	<td>0.3915</td>
+	<td>0.02349946</td>
+	<td>0.11409065</td>
+	<td>0.10439257</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.41691355</a></td>
+	</tr>
+
+	<tr>
+	<td id="18YSC7rhfSscWNJL7x8JqDqujMFZxm5VYv">18YSC7rhfSscWNJL7x8JqDqujMFZxm5VYv</td>
+	<td>14.3632</td>
+	<td>0.2517</td>
+	<td>0.01019057</td>
+	<td>0.04509319</td>
+	<td>0.09664970</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.96178449</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1JXbakcLuKHLyyhCjwjcxg1KKET5bUwqpq">1JXbakcLuKHLyyhCjwjcxg1KKET5bUwqpq</td>
+	<td>14.0835</td>
+	<td>0.4381</td>
+	<td>0.02291069</td>
+	<td>0.11437863</td>
+	<td>0.10057786</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.57907109</a></td>
+	</tr>
+
+	<tr>
+	<td id="1ukquGj4nriD5djXCXtbvRNhn7MqPr7qt">1ukquGj4nriD5djXCXtbvRNhn7MqPr7qt</td>
+	<td>14.0183</td>
+	<td>0.2796</td>
+	<td>0.01498752</td>
+	<td>0.07814636</td>
+	<td>0.08215054</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.38364476</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1ETgWGxSzLdQahcNGTMDpUZ2U6wCkDzCoN">1ETgWGxSzLdQahcNGTMDpUZ2U6wCkDzCoN</td>
+	<td>13.7294</td>
+	<td>0.6991</td>
+	<td>0.02107891</td>
+	<td>0.09423234</td>
+	<td>0.09451912</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.66210033</a></td>
+	</tr>
+
+	<tr>
+	<td id="1ACeXZepzsNF4eJPYoNk6mJB8sBqbVgw83">1ACeXZepzsNF4eJPYoNk6mJB8sBqbVgw83</td>
+	<td>13.5429</td>
+	<td>0.1678</td>
+	<td>0.01328233</td>
+	<td>0.06032179</td>
+	<td>0.07302255</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.41247221</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1E4vcg833RGdZM1V1id6ebeicYML9EQdXB">1E4vcg833RGdZM1V1id6ebeicYML9EQdXB</td>
+	<td>13.5243</td>
+	<td>0.1864</td>
+	<td>0.01652598</td>
+	<td>0.08130287</td>
+	<td>0.08457426</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.78723876</a></td>
+	</tr>
+
+	<tr>
+	<td id="1AMFXKtWLncjHZ8BjF7P7cUMesstj4Ptpc">1AMFXKtWLncjHZ8BjF7P7cUMesstj4Ptpc</td>
+	<td>13.4031</td>
+	<td>0.4194</td>
+	<td>0.00978838</td>
+	<td>0.04640735</td>
+	<td>0.10291620</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">4.37731333</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="12PwKg4jzaApFWH5GU3C5MMebtzEt1t8TX">12PwKg4jzaApFWH5GU3C5MMebtzEt1t8TX</td>
+	<td>13.3752</td>
+	<td>0.5406</td>
+	<td>0.01593612</td>
+	<td>0.08660358</td>
+	<td>0.08799250</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.27994103</a></td>
+	</tr>
+
+	<tr>
+	<td id="15vyjkoZcqk6xyCbSqdrVRrpo8Mp2JTB7c">15vyjkoZcqk6xyCbSqdrVRrpo8Mp2JTB7c</td>
+	<td>13.3379</td>
+	<td>0.4567</td>
+	<td>0.02219513</td>
+	<td>0.11209498</td>
+	<td>0.09834896</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">3.11673033</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="19ZPghSLX596EexAV49Rhx8JB4qq4JHeXY">19ZPghSLX596EexAV49Rhx8JB4qq4JHeXY</td>
+	<td>13.0676</td>
+	<td>0.5872</td>
+	<td>0.02052881</td>
+	<td>0.10235348</td>
+	<td>0.07785669</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">25.99146881</a></td>
+	</tr>
+
+	<tr>
+	<td id="1LoveVxZaJSCQskQi11tfraouZzMP72svY">1LoveVxZaJSCQskQi11tfraouZzMP72svY</td>
+	<td>13.0583</td>
+	<td>0.3449</td>
+	<td>0.00902427</td>
+	<td>0.04200212</td>
+	<td>0.10100727</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.33242936</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1KJJrEezp2BbYq1ZmRWt6VnVV1SVUbYEFW">1KJJrEezp2BbYq1ZmRWt6VnVV1SVUbYEFW</td>
+	<td>13.0396</td>
+	<td>0.5872</td>
+	<td>0.01997644</td>
+	<td>0.10245377</td>
+	<td>0.08268004</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">13.24877532</a></td>
+	</tr>
+
+	<tr>
+	<td id="174AJgwGaKVU4UHKBWMPam2A4ThoFDPezc">174AJgwGaKVU4UHKBWMPam2A4ThoFDPezc</td>
+	<td>12.7786</td>
+	<td>0.2330</td>
+	<td>0.00500710</td>
+	<td>0.06221936</td>
+	<td>0.09286825</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.45038381</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1CFYZgSuAdx9w8cyQYTbDvq9nyzeP7193V">1CFYZgSuAdx9w8cyQYTbDvq9nyzeP7193V</td>
+	<td>12.6295</td>
+	<td>0.1118</td>
+	<td>0.00665838</td>
+	<td>0.00544656</td>
+	<td>0.00733378</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html"></a></td>
+	</tr>
+
+	<tr>
+	<td id="1NehZYEDPLKeMxG2gUgYQm64NEmBne9b6g">1NehZYEDPLKeMxG2gUgYQm64NEmBne9b6g</td>
+	<td>12.5363</td>
+	<td>0.2889</td>
+	<td>0.00929933</td>
+	<td>0.04843985</td>
+	<td>0.07344861</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.03544271</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1EpjgaAWKnaFoQcwYuGPQ5hudxsKXk7U7T">1EpjgaAWKnaFoQcwYuGPQ5hudxsKXk7U7T</td>
+	<td>12.5083</td>
+	<td>0.4940</td>
+	<td>0.01004439</td>
+	<td>0.05228711</td>
+	<td>0.06762512</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">3.54871802</a></td>
+	</tr>
+
+	<tr>
+	<td id="17aUk8kvWnKLxS1tb1JwHv5uXtc2A7qVXX">17aUk8kvWnKLxS1tb1JwHv5uXtc2A7qVXX</td>
+	<td>12.3499</td>
+	<td>0.4381</td>
+	<td>0.01651096</td>
+	<td>0.08284754</td>
+	<td>0.07969576</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">17.15479616</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1JT3Te1S1v77jup9eMHHgxHsXUM83tJQX6">1JT3Te1S1v77jup9eMHHgxHsXUM83tJQX6</td>
+	<td>12.3219</td>
+	<td>0.3635</td>
+	<td>0.00964156</td>
+	<td>0.06026350</td>
+	<td>0.08282826</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.78154278</a></td>
+	</tr>
+
+	<tr>
+	<td id="1EveA7Aqrz7fYPz5nhWc5QQs3ibUk5Qiuz">1EveA7Aqrz7fYPz5nhWc5QQs3ibUk5Qiuz</td>
+	<td>12.2380</td>
+	<td>0.2610</td>
+	<td>0.01664923</td>
+	<td>0.08290716</td>
+	<td>0.08689595</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.55188019</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="13svSaoVH3tgabZaKzd2Zdx1MN9xpGXJh7">13svSaoVH3tgabZaKzd2Zdx1MN9xpGXJh7</td>
+	<td>12.1262</td>
+	<td>0.2517</td>
+	<td>0.01384944</td>
+	<td>0.07042534</td>
+	<td>0.10013858</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">3.83443984</a></td>
+	</tr>
+
+	<tr>
+	<td id="1KChaVCN6LexY7oCi5dtUZYyvYR8pEYcw8">1KChaVCN6LexY7oCi5dtUZYyvYR8pEYcw8</td>
+	<td>12.0796</td>
+	<td>0.1118</td>
+	<td>0.01025640</td>
+	<td>0.04643453</td>
+	<td>0.05857739</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.45762010</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1EH1uXxQRzNRZQepTH2kjXV1G5Nsg882QU">1EH1uXxQRzNRZQepTH2kjXV1G5Nsg882QU</td>
+	<td>11.9771</td>
+	<td>0.6618</td>
+	<td>0.00963479</td>
+	<td>0.05226592</td>
+	<td>0.06488897</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.05547016</a></td>
+	</tr>
+
+	<tr>
+	<td id="16JtSgmjMoiFaVmXvQN7Y262JN7BqyyD8x">16JtSgmjMoiFaVmXvQN7Y262JN7BqyyD8x</td>
+	<td>11.9584</td>
+	<td>0.5592</td>
+	<td>0.01734705</td>
+	<td>0.07781630</td>
+	<td>0.08391009</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">3.60171698</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="17kJwmiN7k3sSE7nDxYrGQrR8AK9Uyw5B7">17kJwmiN7k3sSE7nDxYrGQrR8AK9Uyw5B7</td>
+	<td>11.9491</td>
+	<td>0.4754</td>
+	<td>0.00871290</td>
+	<td>0.01754734</td>
+	<td>0.03338628</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.01229896</a></td>
+	</tr>
+
+	<tr>
+	<td id="1CZ3XkKoyEy9iMGGzoi4DSeoQVPsNt9Ywm">1CZ3XkKoyEy9iMGGzoi4DSeoQVPsNt9Ywm</td>
+	<td>11.8932</td>
+	<td>0.4474</td>
+	<td>0.01466438</td>
+	<td>0.07934642</td>
+	<td>0.08118374</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">3.88576835</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1M13UBaepP4ujXJjsa51K6g7y3k8FGg6Eh">1M13UBaepP4ujXJjsa51K6g7y3k8FGg6Eh</td>
+	<td>11.8839</td>
+	<td>0.1491</td>
+	<td>0.01793818</td>
+	<td>0.08099738</td>
+	<td>0.08583787</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.07804532</a></td>
+	</tr>
+
+	<tr>
+	<td id="1Le89oQd1zEiXKbZnEqkMtzC8Tc5UwG6rm">1Le89oQd1zEiXKbZnEqkMtzC8Tc5UwG6rm</td>
+	<td>11.7627</td>
+	<td>0.5686</td>
+	<td>0.00934485</td>
+	<td>0.05759224</td>
+	<td>0.07713755</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.11027716</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="12F9QHVkaGPC5X5ctMCr7JWJraX248U6Zv">12F9QHVkaGPC5X5ctMCr7JWJraX248U6Zv</td>
+	<td>11.6974</td>
+	<td>0.2889</td>
+	<td>0.01785404</td>
+	<td>0.08744621</td>
+	<td>0.08220931</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.61370236</a></td>
+	</tr>
+
+	<tr>
+	<td id="15AHe6uqRPXHendxoqRMsW26TwPxTzR7SX">15AHe6uqRPXHendxoqRMsW26TwPxTzR7SX</td>
+	<td>11.6508</td>
+	<td>0.5965</td>
+	<td>0.00932904</td>
+	<td>0.05454242</td>
+	<td>0.10540614</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.38819303</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1NwFoC8GK369BRJyepTTqPh8CQX2UJFiiS">1NwFoC8GK369BRJyepTTqPh8CQX2UJFiiS</td>
+	<td>11.6415</td>
+	<td>0.2144</td>
+	<td>0.01784172</td>
+	<td>0.09842760</td>
+	<td>0.08624787</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">7.81216622</a></td>
+	</tr>
+
+	<tr>
+	<td id="15wTzgcyGzPkXbPJtcPfpKHsHQsu4U2tDZ">15wTzgcyGzPkXbPJtcPfpKHsHQsu4U2tDZ</td>
+	<td>11.5949</td>
+	<td>0.6152</td>
+	<td>0.01084447</td>
+	<td>0.05996025</td>
+	<td>0.08163456</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">6.50582487</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1P14pxxmFw2du1jVwQ9NHCLVT7HWJFUYTW">1P14pxxmFw2du1jVwQ9NHCLVT7HWJFUYTW</td>
+	<td>11.5856</td>
+	<td>0.4567</td>
+	<td>0.01564908</td>
+	<td>0.07404742</td>
+	<td>0.07305786</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">4.29027623</a></td>
+	</tr>
+
+	<tr>
+	<td id="18iYcMbQV5eXp7kEu5Zdki84rNDQCD6RbV">18iYcMbQV5eXp7kEu5Zdki84rNDQCD6RbV</td>
+	<td>11.4178</td>
+	<td>0.2330</td>
+	<td>0.01011631</td>
+	<td>0.03929952</td>
+	<td>0.05706618</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">0.07074718</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="131sN8GmsY5sg14uza2nvuEwPYjnEJoZZL">131sN8GmsY5sg14uza2nvuEwPYjnEJoZZL</td>
+	<td>11.3433</td>
+	<td>0.6152</td>
+	<td>0.01832694</td>
+	<td>0.09050065</td>
+	<td>0.07827093</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.69264963</a></td>
+	</tr>
+
+	<tr>
+	<td id="16zVrco1bj44NmybVWS8uApcDqt8LZ8FYS">16zVrco1bj44NmybVWS8uApcDqt8LZ8FYS</td>
+	<td>11.2873</td>
+	<td>0.2983</td>
+	<td>0.02100453</td>
+	<td>0.09510208</td>
+	<td>0.08776325</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">2.64534769</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="18epAzrPNQSjx1ExYz3zRPmD3WQaTVyGAr">18epAzrPNQSjx1ExYz3zRPmD3WQaTVyGAr</td>
+	<td>11.1568</td>
+	<td>0.3169</td>
+	<td>0.00805594</td>
+	<td>0.03729878</td>
+	<td>0.08015951</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">3.73103297</a></td>
+	</tr>
+
+	<tr>
+	<td id="1PGPgypZTzFJX8sVMfgpPGEq1m3P2QSRvo">1PGPgypZTzFJX8sVMfgpPGEq1m3P2QSRvo</td>
+	<td>11.1102</td>
+	<td>0.4754</td>
+	<td>0.01005046</td>
+	<td>0.04519243</td>
+	<td>0.06947542</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html">1.25068840</a></td>
+	</tr>
+
+	<tr class="alt">
+	<td id="1Nh5PkjoW8ZVVA2GdJDCegVLuGW5rtMEtb">1Nh5PkjoW8ZVVA2GdJDCegVLuGW5rtMEtb</td>
+	<td>11.0264</td>
+	<td>0.3355</td>
+	<td>0.00780363</td>
+	<td>0.03271406</td>
+	<td>0.05839493</td>
+	<td><a href="1JTgncSrWiQtEAdtYhtytCEqND8wVb3b5R.html"></a></td>
+	</tr>
+
+	</tbody>
+	</table>
+</article>
+
+<footer>
+	Page last updated 2014-01-05 20:05:34 UTC
+</footer>
+
+</div>
+
+</body>
+</html>
