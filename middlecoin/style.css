@@ -43,7 +43,7 @@ nav > ul:after
    clear: both;
 }
 
-nav > ul > li
+nav ul > li
 {
 	font-family: 'Noticia Text', serif;
 	float: left;
@@ -51,12 +51,12 @@ nav > ul > li
 	line-height: 36px;
 }
 
-nav > ul > li.active
+nav ul > li.active
 {
 	background-color: #161616;
 }
 
-nav > ul > li > a
+nav ul > li > a
 {
 	position: relative;
 	display: block;
@@ -65,13 +65,13 @@ nav > ul > li > a
 	text-decoration: none;
 }
 
-nav > ul > li:first-child a
+nav ul > li:first-child a
 {
 	font-weight: bold;
 	color: #fff;
 }
 
-nav > ul > li > a:hover
+nav ul > li > a:hover
 {
 	color: #fff;
 }
@@ -105,9 +105,15 @@ article h1:first-child
 	margin-top: 0;
 }
 
-p, pre, canvas
+p, pre
 {
 	margin: 0.7em 0;
+}
+
+canvas
+{
+	display: block;
+	margin: 40px auto 0.7em auto;
 }
 
 h2 + canvas {
@@ -116,7 +122,8 @@ h2 + canvas {
 
 p.courtesy
 {
-	width: 980px;
+	width: 965px;
+	margin: 0 auto;
 	text-align: right;
 	font-style: italic;
 	margin-top: -10px;
